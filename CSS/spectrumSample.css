@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+h2{
+    font-family: 'Limelight', cursive;
+    text-align: center;
+    color: blanchedalmond;
+}
+body{
+    background-color: black;
+}
+.col-11 {
+    float: left;
+    border:30px solid bisque;
+    height: 5px;
+    margin-left:470px;
+}
+.col-12 {
+    float: left;
+    border:30px solid brown;
+    height: 5px;
+    margin-left:25px;
+    margin-top: auto;
+}
+.col-13 {
+    float: left;
+    border:30px solid turquoise;
+    height: 5px;
+    margin-left:25px;
+}
+.col-14 {
+    float: left;
+    border:30px solid tomato;
+    height: 5px;
+    margin-left:25px;
+}
+.col-15 {
+    float: left;
+    border:30px solid green;
+    height: 5px;
+    margin-left:25px;
+
+    
+}
+.row-2{
+    margin-top: 25px;
+}
+.col-21 {
+    float: left;
+    border:30px solid yellow;
+    height: 5px;
+    margin-left:500px;
+
+}
+.col-22 {
+    float: left;
+    border:30px solid red;
+    height: 5px;
+    margin-left:25px;
+    
+}
+.col-23 {
+    float: left;
+    border:30px solid purple;
+    height: 5px;
+    margin-left:25px;
+}
+.col-24 {
+    float: left;
+    border:30px solid pink;
+    height: 5px;
+    margin-left:25px;
+}
+.col-25 {
+    float: left;
+    border:30px solid rebeccapurple;
+    height: 5px;
+    margin-left:25px;
+}
+.col-26 {
+    float: left;
+    border:30px solid brown;
+    height: 5px;
+    margin-left:25px;
+}
+.col-27 {
+    float: left;
+    border:30px solid wheat;
+    height: 5px;
+    margin-left:25px;
+}
+.row-3{
+    margin-top: 25px;
+}
+.col-31 {
+    float: left;
+    border:30px solid green;
+    height: 5px;
+    margin-left:280px;
+
+}
+.col-32 {
+    float: left;
+    border:30px solid greenyellow;
+    height: 5px;
+    margin-left:25px;
+    
+}
+.col-33 {
+    float: left;
+    border:30px solid grey;
+    height: 5px;
+    margin-left:25px;
+}
+.col-34 {
+    float: left;
+    border:30px solid blue;
+    height: 5px;
+    margin-left:25px;
+}
+.col-35 {
+    float: left;
+    border:30px solid rebeccapurple;
+    height: 5px;
+    margin-left:25px;
+}
+.col-36 {
+    float: left;
+    border:30px solid blueviolet;
+    height: 5px;
+    margin-left:25px;
+}
+.col-37 {
+    float: left;
+    border:30px solid burlywood;
+    height: 5px;
+    margin-left:25px;
+}
+.col-38 {
+    float: left;
+    border:30px solid goldenrod;
+    height: 5px;
+    margin-left:25px;
+}
+.col-39 {
+    float: left;
+    border:30px solid forestgreen;
+    height: 5px;
+    margin-left:25px;
+}

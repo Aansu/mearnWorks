@@ -1,0 +1,17 @@
+body{
+    background-color: whitesmoke;
+}
+h1{
+    color: purple;
+    text-decoration: underline;
+    text-align: center;
+}
+.state{
+    text-align: center;
+    background-color:turquoise;
+    float: left;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    
+}

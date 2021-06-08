@@ -1,0 +1,12 @@
+.top{
+    color: brown;
+    border: 1px solid black;
+    width: 400px;
+
+}
+.bottom{
+    color: brown;
+    border: 1px solid black;
+    width: 400px;
+    margin-top: 250px;
+}

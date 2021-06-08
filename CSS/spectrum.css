@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+h2{
+    font-family: 'Limelight', cursive;
+    text-align: center;
+    color: whitesmoke;
+}
+body
+{
+    background-color:black;
+}
+
+.col-11{
+background-color: steelblue;
+color: black;
+width: 5%;
+height: 50px;
+border: 10px solid black;
+float: left;
+margin-left: 462px;
+}
+.col-12{
+background-color: blueviolet;
+color: black;
+width: 5%;
+height: 50px;
+border: 10px solid black;
+float: left;
+}
+.col-13{
+background-color: violet;
+color: black;
+width: 5%;
+height: 50px;
+border: 10px solid black;
+float: left;
+}
+.col-14{
+background-color: blue;
+color: black;
+width: 5%;
+height: 50px;
+border: 10px solid black;
+float: left;
+}
+.col-15{
+background-color: teal;
+color: black;
+width: 5%;
+height: 50px;
+border: 10px solid black;
+float: left;
+}
+
+.col-21{
+    background-color: steelblue;
+    color: black;
+    width: 5%;
+    float:left;
+    height: 50px;
+    border: 10px solid black;
+    margin-left: 376px;
+    }
+    .col-22{
+    background-color: rosybrown;
+    color: black;
+    width: 5%;
+    float:left;
+    height: 50px;
+    border: 10px solid black;
+    }
+    .col-23{
+    background-color: red;
+    color: black;
+    width: 5%;
+    float:left;
+    height: 50px;
+    border: 10px solid black;
+    }
+    .col-24{
+    background-color: plum;
+    width: 5%;
+    color: black;
+    float:left;
+    height: 50px;
+    border: 10px solid black;
+    }
+    .col-25{
+    background-color:pink;
+    color: black;
+    width: 5%;
+    float:left;
+    height: 50px;
+    border: 10px solid black;
+    }
+    .col-26{
+    background-color:blueviolet;
+    color: black;
+    width: 5%;
+    float:left;
+    height: 50px;
+    border: 10px solid black;
+    }
+    .col-27{
+    background-color:rebeccapurple;
+    color: black;
+    width: 5%;
+    float:left;
+    height: 50px;
+    border: 10px solid black;
+    } 
+
+
+    .col-31{
+        background-color: steelblue;
+        color: black;
+        width: 5%;
+        height: 50px;
+        float:left;
+        border: 10px solid black;
+        margin-left: 287px;
+        }
+        .col-32{
+        background-color: rosybrown;
+        color: black;
+        width: 5%;
+        height: 50px;
+        float:left;
+        border: 10px solid black;
+        }
+        .col-33{
+        background-color: red;
+        color: black;
+        width: 5%;
+        height: 50px;
+        float:left;
+        border: 10px solid black;
+        }
+        .col-34{
+        background-color: plum;
+        width: 5%;
+        height: 50px;
+        color: black;
+        float:left;
+        border: 10px solid black;
+        }
+        .col-35{
+        background-color:pink;
+        color: #d11b1b;
+        width: 5%;
+        height: 50px;
+        float:left;
+        border: 10px solid black;
+        }
+        .col-36{
+        background-color:blueviolet;
+        color: black;
+        width: 5%;
+        height: 50px;
+        float:left;
+        border: 10px solid black;
+        }
+        .col-37{
+        background-color:rebeccapurple;
+        color: black;
+        width: 5%;
+        height: 50px;
+        float:left;
+        border: 10px solid black;
+        }
+        .col-38{
+        background-color:blueviolet;
+        color: black;
+        width: 5%;
+        height: 50px;
+        float:left;
+        border: 10px solid black;
+        }
+            .col-39{
+            background-color:rebeccapurple;
+            color: black;
+            width: 5%;
+            height: 50px;
+            float:left;
+            border: 10px solid black;
+            }  
