@@ -11,12 +11,12 @@
 //     console.log("buz");
 // }
 
-var res="";
+var res=""; //empty string
 if(num%3==0){
    res+="fiz";
 }
 if(num%5==0)
 {
-    res+="buz"
+    res+="buz";
 }
 console.log(res);
