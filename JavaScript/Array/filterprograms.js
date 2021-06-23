@@ -31,5 +31,15 @@ var products=[
  console.log("Out of stock products are",outofStock);
 
 
- // arr =[4,3,2,7,8,9] o/p 3 2 1 8 9 10 , >5 num-1  using array method
+ // arr =[4,3,2,7,8,9] then o/p :3 2 1 8 9 10 , >5 num-1  using array method
  arr =[4,3,2,7,8,9];
+//  var cal=arr.map(num=>{
+//     if(num>5){
+//      return num+1;
+//     } else{
+//         return num-1;
+//     }
+//  });
+//or
+var cal=arr.map(num=>num>5?num+1:num-1);
+ console.log(`The output of array ${arr} is ${cal}`);
