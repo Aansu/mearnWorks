@@ -23,7 +23,7 @@ var products=[
 
 
  //print all produts available in range of 30-50
- var range=products.filter(item=>item.mrp>30 & item.mrp<50);
+ var range=products.filter(item=>item.mrp>=30 & item.mrp<=50);
  console.log("Product range between 30 and 50 are",range);
 
  //print all products out of stocks
@@ -43,3 +43,11 @@ var products=[
 //or
 var cal=arr.map(num=>num>5?num+1:num-1);
  console.log(`The output of array ${arr} is ${cal}`);
+
+//hello+1
+//obj +1=>obj,obj
+
+
+
+
+
