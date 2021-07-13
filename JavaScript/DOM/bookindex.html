@@ -1,43 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
         <div class="col-4"></div>
         <div class="col-4">
-         <input type="text" name="" id="bookname" placeholder="bookname">
-         <input type="text" id="author" placeholder="author">
-         <input type="text" id="price" placeholder="price">
-         <input type="text" id="copies" placeholder="copies">
-         <button class="btn btn-primary" onclick="create()">Create</button>
+            <input type="text" name="" id="bookname" placeholder="bookname">
+            <input type="text" id="author" placeholder="author">
+            <input type="text" id="price" placeholder="price">
+            <input type="text" id="copies" placeholder="copies">
+            <button class="btn btn-primary" onclick="create()">Create</button>
+            <button class="btn btn-primary" onclick="list()">List All Books</button>
+
 
         </div>
         <div class="col-4"></div>
-        
-    </div>
+        <table>
+            <tr>
+                <td>Book Name</td>
+                <td>Author</td>
+                <td>Price</td>
+                <td>Copies</td>
+            </tr>
+            <tbody id="result">
+
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <input type="text" id="srch" placeholder="Enter a book name">
+                <button class="btn btn-primary" onclick="find()">Search book</button>
+            </div>
+            <table>
+                <tbody id="resultarea">
     
+                </tbody>
+            </table>
+            <div class="col-4"></div>
+        </div>
+    </div>
+
+
 </body>
 <script>
-    function create(){
-     let book_name=bookname.value;
-     let auth_or=author.value;
-     let pr_ice=price.value;
-     let cop_ies=copies.value;
-     let book={
-        book_name,auth_or,pr_ice,cop_ies
-     }
-     
-     localStorage.setItem(book_name,JSON.stringify(book));
-     alert("Book Created");
-     location.reload(true);
+    function populate(books) {
+        let html_val = "";
+        for (let book of books) {
+            console.log("poppp" + book);
+            html_val += `<tr><td>${book.book_name}</td> <td> ${book.auth_or}</td> <td> ${book.pr_ice}</td> <td> ${book.cop_ies}</td></tr>`
+            console.log(html_val);
+        }
+        result.innerHTML = html_val;
+
     }
-    
+
+    function create() {
+        let book_name = bookname.value;
+        let auth_or = author.value;
+        let pr_ice = price.value;
+        let cop_ies = copies.value;
+        let book = {
+            book_name, auth_or, pr_ice, cop_ies
+        }
+        if (book_name in localStorage) {
+            alert("Book already exist");
+            location.reload(true);
+        } else {
+            localStorage.setItem(book_name, JSON.stringify(book));//obj to json conversion
+            alert("Book Created");
+            location.reload(true);
+        }
+    }
+
+    function list() {
+        let books = [];
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            let book = JSON.parse(localStorage.getItem(key));  //json to obj conversion
+            //console.log(book);
+            books.push(book)
+
+        }
+        //console.log("hiiiiiiiiiiiiii"+books);
+        populate(books);
+
+
+    }
+
+    function find() {
+        let bname = srch.value;
+        if (bname in localStorage) {
+            let book = JSON.parse(localStorage.getItem(bname));
+            let html_data = `<div class="card" style="width: 18rem;">
+                                 <ul class="list-group list-group-flush">
+                                   <li class="list-group-item">${book.book_name}</li>
+                                   <li class="list-group-item">${book.auth_or}</li>
+                                   <li class="list-group-item">${book.pr_ice}</li>
+                                   <li class="list-group-item">${book.cop_ies}</li>
+                                </ul>
+                            </div>`
+                            resultarea.innerHTML=html_data;
+                            
+        } else {
+            alert("Book not Found");
+        }
+        //location.reload(true);
+
+    }
+
 </script>
+
 </html>

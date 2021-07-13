@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Login</title>
+    <script src="accScript.js"></script>
+    <link rel="stylesheet" href="accScript.css">
+</head>
+<body>
+    <form class="mb-3" style="border:1px solid #ccc ">
+        <div class="container">
+          <h1>Login Account</h1>
+          <hr>
+    
+          <label for="text"><b>Account Number</b></label>
+          <input type="text" placeholder="Enter Account Number" name="acc_no" id="uname" required>
+          
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter your Password" name="psw" id="psw" required>
+          <div class="input-group mb-3">
+            <p style="color: red;" id="error"></p>  
+          </div>
+    
+          <div class="clearfix">
+            <button type="submit" style="margin-left: 300px;" class="signupbtn" onclick="login()">Login</button>
+          </div>
+        </div>
+      </form>
+</body>
+</html>
