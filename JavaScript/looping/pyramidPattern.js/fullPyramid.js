@@ -1,6 +1,6 @@
 //5 times outer row
 
-for(let row=1;row<=5;row++)
+for(let row=1;row<=7;row++)
 {
     let str="";
     for(let space=5-row;space<=1;space--)
